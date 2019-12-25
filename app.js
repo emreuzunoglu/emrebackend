@@ -14,7 +14,7 @@ app.get("/", function(req, res){
     var day = "";
     var nameOfDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    day = nameOfDay[currentDay + 3];
+    day = nameOfDay[currentDay];
 
     res.render("list", {kindOfDay: day})
   
